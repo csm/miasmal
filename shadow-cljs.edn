@@ -1,0 +1,9 @@
+{:deps {:aliases [:cljs]}
+ :nrepl {:port 7888}
+ :builds {:app {:target :browser
+                :output-dir "www-dev/cljs/app"
+                :asset-path "/cljs/app"
+                :compiler-options {:infer-externs :auto}
+                :modules {:main {:init-fn miasmal.client.app/init
+                                 :entries [miasmal.client.app]}}
+                :devtools {:after-load miasmal.client.app/mount}}}}

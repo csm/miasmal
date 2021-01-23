@@ -47,5 +47,4 @@
 (comment
   ; Useful REPL commands:
   (biff.core/refresh)
-  (->> @biff.core/system keys sort (run! prn))
-  )
+  (->> @biff.core/system keys sort (run! prn)))

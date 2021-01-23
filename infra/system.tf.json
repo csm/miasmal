@@ -61,13 +61,13 @@
   }, {
     "digitalocean_domain" : {
       "default" : {
-        "name" : "miasmal.org"
+        "name" : "miasma.me"
       }
     }
   }, {
     "digitalocean_record" : {
       "default" : {
-        "domain" : "miasmal.org",
+        "domain" : "miasma.me",
         "type" : "A",
         "name" : "@",
         "value" : "${digitalocean_droplet.webserver.ipv4_address}"
